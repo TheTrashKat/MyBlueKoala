@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/niko"
+    tools:context="@mipmap/niko">
+
+    <Button
+        android:id="@+id/IdEncender"
+        android:layout_width="121dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-121dp"
+        android:layout_toStartOf="@+id/IdBufferIn"
+        android:alpha="0.1"
+        android:text="Encender Led" />
+
+    <Button
+        android:id="@+id/IdV3"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0.1"
+        android:text="Encender Led" />
+
+    <Button
+        android:id="@+id/IdApagar"
+        android:layout_width="119dp"
+        android:layout_height="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="438dp"
+        android:alpha="0.1"
+        android:text="Apagar Led" />
+
+    <TextView
+        android:id="@+id/IdBufferIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-53dp"
+        android:layout_marginBottom="106dp"
+        android:layout_toStartOf="@+id/IdControl"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/IdDesconectar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/IdControl"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:text="Desconectar" />
+</RelativeLayout>
