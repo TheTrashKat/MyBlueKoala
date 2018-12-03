@@ -39,6 +39,7 @@ public class UserInterfaz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_interfaz);
+        getSupportActionBar().hide();
         //2)
         //Enlaza los controles con sus respectivas vistas
         IdEncender = (Button) findViewById(R.id.IdEncender);
