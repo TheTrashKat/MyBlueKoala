@@ -5,6 +5,7 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.os.Handler;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -33,6 +34,9 @@ public class UserInterfaz extends AppCompatActivity {
     private static final UUID BTMODULEUUID = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
     // String para la direccion MAC
     private static String address = null;
+
+    private ViewPager viewPager;
+    private SlideAdapter myadapter;
     //-------------------------------------------
 
     @Override
@@ -40,11 +44,17 @@ public class UserInterfaz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_interfaz);
         getSupportActionBar().hide();
+        viewPager = (ViewPager) findViewById(R.id.viewpager);
+        myadapter = new SlideAdapter(this);
+        viewPager.setAdapter(myadapter);
+
         //2)
         //Enlaza los controles con sus respectivas vistas
-        IdEncender = (Button) findViewById(R.id.IdEncender);
+     /*   IdEncender = (Button) findViewById(R.id.IdEncender);
         IdV3 = (Button) findViewById(R.id.IdV3);
         IdApagar = (Button) findViewById(R.id.IdApagar);
+     */
+
         IdDesconectar = (Button) findViewById(R.id.IdDesconectar);
         IdBufferIn = (TextView) findViewById(R.id.IdBufferIn);
 
@@ -72,7 +82,7 @@ public class UserInterfaz extends AppCompatActivity {
         // Configuracion onClick listeners para los botones
         // para indicar que se realizara cuando se detecte
         // el evento de Click
-        IdEncender.setOnClickListener(new View.OnClickListener() {
+      /*  IdEncender.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
                // MyConexionBT.write("1");
@@ -93,7 +103,7 @@ public class UserInterfaz extends AppCompatActivity {
                 //   MyConexionBT.write("0");
                 videoSelect("C");
             }
-        });
+        });  */
 
         IdDesconectar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
