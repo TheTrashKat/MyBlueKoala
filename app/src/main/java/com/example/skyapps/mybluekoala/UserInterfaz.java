@@ -43,7 +43,7 @@ public class UserInterfaz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_interfaz);
-        getSupportActionBar().hide();
+       // getSupportActionBar().hide();
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         myadapter = new SlideAdapter(this);
         viewPager.setAdapter(myadapter);
@@ -55,8 +55,8 @@ public class UserInterfaz extends AppCompatActivity {
         IdApagar = (Button) findViewById(R.id.IdApagar);
      */
 
-        IdDesconectar = (Button) findViewById(R.id.IdDesconectar);
-        IdBufferIn = (TextView) findViewById(R.id.IdBufferIn);
+        //IdDesconectar = (Button) findViewById(R.id.IdDesconectar);
+        //IdBufferIn = (TextView) findViewById(R.id.IdBufferIn);
 
         bluetoothIn = new Handler() {
             public void handleMessage(android.os.Message msg) {

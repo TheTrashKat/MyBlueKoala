@@ -23,7 +23,7 @@ public class VideoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
-        getSupportActionBar().hide();
+       // getSupportActionBar().hide();
 
         videoView=(VideoView)findViewById(R.id.videoView);
         DaVideo= getIntent().getStringExtra("url");
