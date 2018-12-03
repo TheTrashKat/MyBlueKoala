@@ -19,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
         IdEmpezar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v)
             {
-                Intent i = new Intent(LoginActivity.this, DispositivosBT.class);//<-<- PARTE A MODIFICAR >->-
+                Intent i = new Intent(LoginActivity.this, DispositivosBT.class);//<-<- PARTE A MODIFICAR >->-A
                 startActivity(i);
             }
         });

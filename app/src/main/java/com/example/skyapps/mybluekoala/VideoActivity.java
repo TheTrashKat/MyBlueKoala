@@ -12,10 +12,10 @@ import java.net.URI;
 
 public class VideoActivity extends AppCompatActivity {
     Uri uri;
-
     {
         uri = null;
     }
+
 
     VideoView videoView;
     String DaVideo;
