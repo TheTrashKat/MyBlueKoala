@@ -55,8 +55,8 @@ public class UserInterfaz extends AppCompatActivity {
         IdApagar = (Button) findViewById(R.id.IdApagar);
      */
 
-        //IdDesconectar = (Button) findViewById(R.id.IdDesconectar);
-        //IdBufferIn = (TextView) findViewById(R.id.IdBufferIn);
+        IdDesconectar = (Button) findViewById(R.id.IdDesconectar);
+
 
         bluetoothIn = new Handler() {
             public void handleMessage(android.os.Message msg) {
