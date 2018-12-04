@@ -33,8 +33,9 @@ public class VideoActivity extends AppCompatActivity {
 
         if(DaVideo.equals("A")){
 
-            uri = Uri.parse("http://innovaskyapps.com.co/UB/Vocales.mp4");
-
+           // uri = Uri.parse("http://innovaskyapps.com.co/UB/Vocales.mp4");
+            String dir= "android.resource://"+getPackageName()+"/"+R.raw.colores;
+            uri = Uri.parse(dir);
 
 
 
@@ -43,15 +44,17 @@ public class VideoActivity extends AppCompatActivity {
 
        else if(DaVideo.equals("B")){
 
-            uri = Uri.parse("http://innovaskyapps.com.co/UB/Vocales.mp4");
-
+            //uri = Uri.parse("http://innovaskyapps.com.co/UB/Vocales.mp4");
+            String dir= "android.resource://"+getPackageName()+"/"+R.raw.vocales;
+            uri = Uri.parse(dir);
 
         }
 
         else if(DaVideo.equals("C")){
 
-             uri = Uri.parse("http://innovaskyapps.com.co/UB/WhatsApp%20Video%202018-11-07%20at%2000.59.52.mp4");
-
+             //uri = Uri.parse("http://innovaskyapps.com.co/UB/WhatsApp%20Video%202018-11-07%20at%2000.59.52.mp4");
+            String dir= "android.resource://"+getPackageName()+"/"+R.raw.intro_koala;
+            uri = Uri.parse(dir);
 
         }
        /* else{

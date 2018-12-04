@@ -2,8 +2,10 @@ package com.example.skyapps.mybluekoala;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v4.view.PagerAdapter;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,7 +62,7 @@ public class SlideAdapter extends PagerAdapter {
         imgslide.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 //   MyConexionBT.write("0");
-                ToastTest(lst_lettersVideos[position]);
+                videoSelect(lst_lettersVideos[position]);
             }
         });
 
@@ -76,6 +78,15 @@ public class SlideAdapter extends PagerAdapter {
 
     public void ToastTest(String text){
         Toast.makeText(context, "Aqui Viene los videos"+text, Toast.LENGTH_SHORT).show();
+
+    }
+
+    private void videoSelect(String a) {
+      //  View v = new View(context);
+        Intent readMore = new Intent(this.context, VideoActivity.class);
+        final Intent url = readMore.putExtra("url", a);
+        this.context.startActivity(readMore);
+
 
     }
 
